@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/libs/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/libs/fancybox.css">
+	<link rel="preload" href="./fonts/nunitosans-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/jost-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/jost-medium-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrap">
+				<div class="header__left-block">
+					<a href="" class="header__logo">
+						<img src="./images/logo-header.svg" alt="logo" class="header__logo-img">
+					</a>
+					<div class="header__location">
+						<svg class="icon header__map-icon">
+							<use xlink:href="./images/sprites.svg#location"></use>
+						</svg>
+						<div class="header__search-place">
+							<p class="header__place">Тамбов</p>
+							<a href="#" class="header__search-link">Это не ваш город?</a>
+						</div>
+					</div>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="" class="header__nav-link text-hover">Аптеки</a>
+						</li>
+						<li class="header__item">
+							<a href="" class="header__nav-link text-hover">Города</a>
+						</li>
+						<li class="header__item">
+							<a href="" class="header__nav-link text-hover">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__right-block">
+					<label class="header__search" for="header-search">
+						<input type="search" class="header__search-content" id="header-search" placeholder="Поиск">
+						<svg class="icon header__search-svg">
+							<use xlink:href="./images/sprites.svg#search"></use>
+						</svg>
+					</label>
+					<button class="header__signin-button blue-hover">Войти</button>
+				</div>
+				<button type="button" class="burger">
+					<span class="burger__line"></span>
+				</button>
+				<div class="menu-mobile">
+					<div class="header__location menu-mobile__location">
+						<svg class="icon header__map-icon">
+							<use xlink:href="./images/sprites.svg#location"></use>
+						</svg>
+						<div class="header__search-place">
+							<p class="header__place">Тамбов</p>
+							<a href="#" class="header__search-link">Это не ваш город?</a>
+						</div>
+					</div>
+					<nav class="header__nav menu-mobile__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="" class="header__nav-link">Аптеки</a>
+							</li>
+							<li class="header__item">
+								<a href="" class="header__nav-link">Города</a>
+							</li>
+							<li class="header__item">
+								<a href="" class="header__nav-link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__right-block menu-mobile__block">
+						<label class="header__search" for="header-search-mobile">
+							<input type="search" class="header__search-content" id="header-search-mobile" placeholder="Поиск">
+							<svg class="icon header__search-svg">
+								<use xlink:href="./images/sprites.svg#search"></use>
+							</svg>
+						</label>
+						<button class="header__signin-button">Войти</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="" class="breadcrumbs__link">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="" class="breadcrumbs__link">
+							Города
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="" class="breadcrumbs__link">
+							Москва
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<section class="intro-add">
+			<div class="container">
+				<div class="intro-add__wrap">
+					<h1 class="intro-add__title h1-title">Москва</h1>
+					<label class="intro-add__search" for="search-company">
+						<svg class="intro-add__search-icon icon">
+							<use xlink:href="./images/sprites.svg#search"></use>
+						</svg>
+						<input class="intro-add__search-input" type="search" name="search-company" id="search-company" placeholder="Поиск по компаниям в городе Москва">
+					</label>
+				</div>
+			</div>
+		</section>
+		<section class="categories">
+			<div class="container">
+				<div class="categories__headline">
+					<h2 class="categories__title h2-title">Список категорий</h2>
+					<div class="catalog__sort">
+						<p class="catalog__sort-title">Сортировать:</p>
+						<div class="catalog__sort-dropwrap">
+							<button type="button" class="catalog__sort-menu">По популярности</button>
+							<ul class="catalog__sort-dropdown">
+								<li class="catalog__sort-item text-hover">
+									По популярности
+								</li>
+								<li class="catalog__sort-item text-hover">
+									По новизне
+								</li>
+								<li class="catalog__sort-item text-hover">
+									По рейтингу
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="categories__wrap">
+					<div class="categories__menu">
+						<ul class="categories__menu-list">
+							<li class="categories__menu-item text-hover">
+								<a href="#" class="categories__menu-link">Продуктовый магазин</a></li>
+							<li class="categories__menu-item text-hover">
+								<a href="#" class="categories__menu-link">Детские товары</a>
+							</li>
+							<li class="categories__menu-item text-hover">
+								<a href="#" class="categories__menu-link">Электроника и бытовая техника</a>
+							</li>
+							<li class="categories__menu-item text-hover">
+								<a href="#" class="categories__menu-link">Ремонт и товары для дома</a>
+							</li>
+							<li class="categories__menu-item text-hover">
+								<a href="#" class="categories__menu-link">Товары для животных</a>
+							</li>
+							<li class="categories__menu-item text-hover">
+								<a href="#" class="categories__menu-link">Косметика</a>
+							</li>
+							<li class="categories__menu-item text-hover">
+								<a href="#" class="categories__menu-link">Аптеки</a>
+							</li>
+						</ul>
+						<div class="categories__menu-ad">Реклама</div>
+					</div>
+					<div class="categories__inner-wrap">
+						<ul class="categories__content company-2">
+							<li class="categories__item">
+								<div class="categories__item-tooltip orange">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">6.4</p>
+									<p class="categories__item-review">156 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_0.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+							<li class="categories__item">
+								<div class="categories__item-tooltip green">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">9.2</p>
+									<p class="categories__item-review">12 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_1.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+							<li class="categories__item">
+								<div class="categories__item-tooltip red">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">1.2</p>
+									<p class="categories__item-review">66 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_3.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+							<li class="categories__item">
+								<div class="categories__item-tooltip orange">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">6.4</p>
+									<p class="categories__item-review">156 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_0.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+							<li class="categories__item">
+								<div class="categories__item-tooltip green">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">9.2</p>
+									<p class="categories__item-review">12 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_1.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+							<li class="categories__item">
+								<div class="categories__item-tooltip red">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">1.2</p>
+									<p class="categories__item-review">66 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_3.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+							<li class="categories__item">
+								<div class="categories__item-tooltip orange">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">6.4</p>
+									<p class="categories__item-review">156 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_0.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+							<li class="categories__item">
+								<div class="categories__item-tooltip green">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">9.2</p>
+									<p class="categories__item-review">12 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_1.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+							<li class="categories__item">
+								<div class="categories__item-tooltip red">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">1.2</p>
+									<p class="categories__item-review">66 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_3.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+							<li class="categories__item">
+								<div class="categories__item-tooltip orange">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">6.4</p>
+									<p class="categories__item-review">156 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_0.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+							<li class="categories__item">
+								<div class="categories__item-tooltip green">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">9.2</p>
+									<p class="categories__item-review">12 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_1.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+							<li class="categories__item">
+								<div class="categories__item-tooltip red">
+									<div class="categories__item-star">
+										<svg class="categories__item-icon icon">
+											<use xlink:href="./images/sprites.svg#starSmall"></use>
+										</svg>
+									</div>
+									<p class="categories__item-rate">1.2</p>
+									<p class="categories__item-review">66 отзывов</p>
+								</div>
+								<div class="categories__main">
+									<img class="categories__photo" src="./images/shop_3.png" alt="">
+								</div>
+								<div class="categories__info">
+									<a class="categories__info-item text-hover">Акции</a>
+									<a class="categories__info-item text-hover">Каталог товаров</a>
+									<a class="categories__info-item text-hover">Отзывы</a>
+								</div>
+							</li>
+						</ul>
+						<div class="catalog__pagination pagination company-2">
+							<button type="button" class="pagination__btn pagination__btn-prev disabled">
+								Назад
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-page grey-hover current">
+								1
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-page grey-hover">
+								2
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-page grey-hover">
+								3
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-page grey-hover">
+								...
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-page grey-hover">
+								12
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-next">
+								Вперед
+							</button>
+						</div>
+
+						<div class="categories__ad">
+							<p class="categories__ad-content">Наша команда регулярно добавляет множество акций в популярных
+								супермаркетах и скидках в них, и все это, представлено в соответствующих каталогах магазинов. Во многих
+								категориях присутствуют не только сведения об акциях, но и непосредственно сниженные цены на товары, что
+								очень удобно, ведь так можно сразу сравнить и сделать выбор.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="promo-and-catalogs">
+            <div class="container">
+                <h2 class="h2-title promo-and-catalogs__title">
+                    Акции и каталоги других супермаркетов
+                </h2>
+                <ul class="promo-and-catalogs__list">
+                    <li class="promo-and-catalogs__item promo-card shadow-hover">
+						<a href="" class="promo-card__link">
+							<div class="promo-card__content">
+								<div class="promo-card__content-img">
+									<img src="./images/promo.jpg" alt="">
+								</div>
+								<p class="subtitle promo-card__content-subtitle">
+									Каталог акций
+								</p>
+								<p class="promo-card__content-text">
+									с 3 июля по 18 июля 2022 года
+								</p>
+								<div class="promo-card__content-link">
+									Посмотреть каталог
+								</div>
+							</div>
+							<div class="promo-card__img">
+								<img src="./images/shop_0.png" alt="">
+							</div>
+						</a>
+                    </li>
+                    <li class="promo-and-catalogs__item promo-card shadow-hover">
+						<a href="" class="promo-card__link">
+							<div class="promo-card__content">
+								<div class="promo-card__content-img">
+									<img src="./images/promo.jpg" alt="">
+								</div>
+								<p class="subtitle promo-card__content-subtitle">
+									Каталог акций
+								</p>
+								<p class="promo-card__content-text">
+									с 3 июля по 18 июля 2022 года
+								</p>
+								<div class="promo-card__content-link">
+									Посмотреть каталог
+								</div>
+							</div>
+							<div class="promo-card__img">
+								<img src="./images/shop_0.png" alt="">
+							</div>
+						</a>
+                    </li>
+                    <li class="promo-and-catalogs__item promo-card shadow-hover">
+						<a href="" class="promo-card__link">
+							<div class="promo-card__content">
+								<div class="promo-card__content-img">
+									<img src="./images/promo.jpg" alt="">
+								</div>
+								<p class="subtitle promo-card__content-subtitle">
+									Каталог акций
+								</p>
+								<p class="promo-card__content-text">
+									с 3 июля по 18 июля 2022 года
+								</p>
+								<div class="promo-card__content-link">
+									Посмотреть каталог
+								</div>
+							</div>
+							<div class="promo-card__img">
+								<img src="./images/shop_0.png" alt="">
+							</div>
+						</a>
+                    </li>
+                    <li class="promo-and-catalogs__item promo-card shadow-hover">
+						<a href="" class="promo-card__link">
+							<div class="promo-card__content">
+								<div class="promo-card__content-img">
+									<img src="./images/promo.jpg" alt="">
+								</div>
+								<p class="subtitle promo-card__content-subtitle">
+									Каталог акций
+								</p>
+								<p class="promo-card__content-text">
+									с 3 июля по 18 июля 2022 года
+								</p>
+								<div class="promo-card__content-link">
+									Посмотреть каталог
+								</div>
+							</div>
+							<div class="promo-card__img">
+								<img src="./images/shop_0.png" alt="">
+							</div>
+						</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+		<section class="reviews">
+			<div class="container">
+				<div class="reviews__wrap city">
+					<div class="reviews__inner-wrap">
+						<div class="reviews__head">
+							<h2 class="reviews__title h2-title">Последние отзывы о компаниях в Москве</h2>
+						</div>
+						<ul class="reviews__list">
+							<li class="reviews__item review-item">
+								<div class="review-item__head">
+									<div class="review-item__data">
+										<p class="review-item__name">
+											Ирина
+										</p>
+										<time class="review-item__date">
+											11 августа 2022
+										</time>
+									</div>
+									<div class="review-item__info">
+										<div class="review-item__tag grey-hover">
+											<svg class="icon review-item__tag-icon">
+												<use xlink:href="./images/sprites.svg#company-arrow"></use>
+											</svg>
+											<p class="review-item__tag-text">
+												О компании “Магнит”
+											</p>
+										</div>
+										<span class="review-item__count">
+											5
+										</span>
+										<ul class="reviews-filter__stars stars" data-grade="5">
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<p class="review-item__text">
+									Очень понравилось! Если бы еще такой вариант сделали без сахара и
+									глюкозы,цены бы ему не было
+								</p>
+							</li>
+							<li class="reviews__item review-item">
+								<div class="review-item__head">
+									<div class="review-item__data">
+										<p class="review-item__name">
+											Кирилл
+										</p>
+										<time class="review-item__date">
+											05 августа 2022
+										</time>
+									</div>
+									<div class="review-item__info">
+										<div class="review-item__tag grey-hover">
+											<svg class="icon review-item__tag-icon">
+												<use xlink:href="./images/sprites.svg#company-arrow"></use>
+											</svg>
+											<p class="review-item__tag-text">
+												О компании “Россельмаш”
+											</p>
+										</div>
+										<span class="review-item__count">
+											4
+										</span>
+										<ul class="reviews-filter__stars stars" data-grade="4">
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<p class="review-item__text">
+									Норм
+								</p>
+							</li>
+							<li class="reviews__item review-item">
+								<div class="review-item__head">
+									<div class="review-item__data">
+										<p class="review-item__name">
+											Александр
+										</p>
+										<time class="review-item__date">
+											22 апреля 2022
+										</time>
+									</div>
+									<div class="review-item__info">
+										<div class="review-item__tag grey-hover">
+											<svg class="icon review-item__tag-icon">
+												<use xlink:href="./images/sprites.svg#company-arrow"></use>
+											</svg>
+											<p class="review-item__tag-text">
+												О компании “Россельмаш”
+											</p>
+										</div>
+										<span class="review-item__count">
+											5
+										</span>
+										<ul class="reviews-filter__stars stars" data-grade="5">
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<p class="review-item__text">
+									Очень понравилось! Если бы еще такой вариант сделали без сахара и глюкозы я бы обосрался
+								</p>
+							</li>
+							<li class="reviews__item review-item">
+								<div class="review-item__head">
+									<div class="review-item__data">
+										<p class="review-item__name">
+											Александр
+										</p>
+										<time class="review-item__date">
+											22 апреля 2022
+										</time>
+									</div>
+									<div class="review-item__info">
+										<div class="review-item__tag grey-hover">
+											<svg class="icon review-item__tag-icon">
+												<use xlink:href="./images/sprites.svg#company-arrow"></use>
+											</svg>
+											<p class="review-item__tag-text">
+												О компании “Россельмаш”
+											</p>
+										</div>
+										<span class="review-item__count">
+											5
+										</span>
+										<ul class="reviews-filter__stars stars" data-grade="5">
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<p class="review-item__text">
+									Очень понравилось! Если бы еще такой вариант сделали без сахара и глюкозы я бы обосрался
+								</p>
+							</li>
+							<li class="reviews__item review-item">
+								<div class="review-item__head">
+									<div class="review-item__data">
+										<p class="review-item__name">
+											Кирилл
+										</p>
+										<time class="review-item__date">
+											05 августа 2022
+										</time>
+									</div>
+									<div class="review-item__info">
+										<div class="review-item__tag grey-hover">
+											<svg class="icon review-item__tag-icon">
+												<use xlink:href="./images/sprites.svg#company-arrow"></use>
+											</svg>
+											<p class="review-item__tag-text">
+												О компании “Лента”
+											</p>
+										</div>
+										<span class="review-item__count">
+											4
+										</span>
+										<ul class="reviews-filter__stars stars" data-grade="4">
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="icon stars__icon">
+													<use xlink:href="./images/sprites.svg#star"></use>
+												</svg>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<p class="review-item__text">
+									Норм
+								</p>
+							</li>
+						</ul>
+						<div class="catalog__pagination pagination company-2">
+							<button type="button" class="pagination__btn pagination__btn-prev disabled">
+								Назад
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-page grey-hover current">
+								1
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-page grey-hover">
+								2
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-page grey-hover">
+								3
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-page grey-hover">
+								...
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-page grey-hover">
+								12
+							</button>
+							<button type="button" class="pagination__btn pagination__btn-next">
+								Вперед
+							</button>
+						</div>
+					</div>
+					<div class="reviews__ad">Реклама</div>
+				</div>
+			</div>
+		</section>
+		<section class="shop-addresses">
+			<div class="container">
+				<div class="shop-addresses__head">
+					<h2 class="h2-title shop-addresses__title">
+						Другие адреса супермаркета Магнит в городе Москва
+					</h2>
+					<div class="shop-addresses__view">
+						<button type="button" class="shop-addresses__btn shop-addresses__btn_map" data-view="map">
+							<svg class="icon">
+								<use xlink:href="./images/sprites.svg#location"></use>
+							</svg>
+							Карта
+						</button>
+						<button type="button" class="shop-addresses__btn shop-addresses__btn_list" data-view="list">
+							<svg class="icon">
+								<use xlink:href="./images/sprites.svg#list"></use>
+							</svg>
+							Списком
+						</button>
+					</div>
+				</div>
+				<div class="shop-addresses__content" data-view="map">
+					<ul class="shop-addresses__list">
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Сергеева-Ценского, 18Б
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Бориса Моисеева, 100Г
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Бориса Моисеева, 100Г
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Бориса Моисеева, 100Г
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Бориса Моисеева, 100Г
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Бориса Моисеева, 100Г
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Бориса Моисеева, 100Г
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Бориса Моисеева, 100Г
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Бориса Моисеева, 100Г
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Бориса Моисеева, 100Г
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Бориса Моисеева, 100Г
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+						<li class="shop-addresses__item">
+							<a href="" class="shop-addresses__link">
+								<div class="shop-addresses__location">
+									<svg class="icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+								</div>
+								<div class="shop-addresses__info">
+									<h5 class="h5-title shop-addresses__subtitle">
+										Москва, ул. Бориса Моисеева, 100Г
+									</h5>
+									<time class="shop-addresses__time">
+										ежедневно, 8:30-21:30
+									</time>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div class="shop-addresses__map">
+						<div id="map"></div>
+					</div>
+				</div>
+
+				<ul class="addresses__list shop-addresses__content" data-view="list">
+					<li class="addresses__item shop-card shadow-hover">
+						<a href="" class="shop-card__wrap">
+							<h4 class="shop-card__subtitle subtitle">
+								Магнит
+							</h4>
+							<ul class="shop-card__params">
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+									<p class="shop-card__description">
+										Москва, ул. Сергеева-Ценского, 12б
+									</p>
+								</li>
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#time"></use>
+									</svg>
+									<p class="shop-card__description">
+										ежедневно, 8:30-21:30
+									</p>
+								</li>
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#star"></use>
+									</svg>
+									<p class="shop-card__description">
+										<span>4.8</span> (18 отзывов)
+									</p>
+								</li>
+							</ul>
+							<p href="" class="show-more">
+								Подробнее
+								<svg class="icon">
+									<use xlink:href="./images/sprites.svg#arrow"></use>
+								</svg>
+							</p>
+						</a>
+					</li>
+					<li class="addresses__item shop-card shadow-hover">
+						<a href="" class="shop-card__wrap">
+							<h4 class="shop-card__subtitle subtitle">
+								Магнит
+							</h4>
+							<ul class="shop-card__params">
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+									<p class="shop-card__description">
+										Москва, ул. Сергеева-Ценского, 12б
+									</p>
+								</li>
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#time"></use>
+									</svg>
+									<p class="shop-card__description">
+										ежедневно, 8:30-21:30
+									</p>
+								</li>
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#star"></use>
+									</svg>
+									<p class="shop-card__description">
+										<span>4.8</span> (18 отзывов)
+									</p>
+								</li>
+							</ul>
+							<p href="" class="show-more">
+								Подробнее
+								<svg class="icon">
+									<use xlink:href="./images/sprites.svg#arrow"></use>
+								</svg>
+							</p>
+						</a>
+					</li>
+					<li class="addresses__item shop-card shadow-hover">
+						<a href="" class="shop-card__wrap">
+							<h4 class="shop-card__subtitle subtitle">
+								Магнит
+							</h4>
+							<ul class="shop-card__params">
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+									<p class="shop-card__description">
+										Москва, ул. Сергеева-Ценского, 12б
+									</p>
+								</li>
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#time"></use>
+									</svg>
+									<p class="shop-card__description">
+										ежедневно, 8:30-21:30
+									</p>
+								</li>
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#star"></use>
+									</svg>
+									<p class="shop-card__description">
+										<span>4.8</span> (18 отзывов)
+									</p>
+								</li>
+							</ul>
+							<p href="" class="show-more">
+								Подробнее
+								<svg class="icon">
+									<use xlink:href="./images/sprites.svg#arrow"></use>
+								</svg>
+							</p>
+						</a>
+					</li>
+					<li class="addresses__item shop-card shadow-hover">
+						<a href="" class="shop-card__wrap">
+							<h4 class="shop-card__subtitle subtitle">
+								Магнит
+							</h4>
+							<ul class="shop-card__params">
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#location"></use>
+									</svg>
+									<p class="shop-card__description">
+										Москва, ул. Сергеева-Ценского, 12б
+									</p>
+								</li>
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#time"></use>
+									</svg>
+									<p class="shop-card__description">
+										ежедневно, 8:30-21:30
+									</p>
+								</li>
+								<li class="shop-card__characteristic">
+									<svg class="icon shop-card__icon">
+										<use xlink:href="./images/sprites.svg#star"></use>
+									</svg>
+									<p class="shop-card__description">
+										<span>4.8</span> (18 отзывов)
+									</p>
+								</li>
+							</ul>
+							<p href="" class="show-more">
+								Подробнее
+								<svg class="icon">
+									<use xlink:href="./images/sprites.svg#arrow"></use>
+								</svg>
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<div class="ad">
+			<div class="container">
+				<p class="ad__content">Наша команда регулярно добавляет множество акций в популярных
+					супермаркетах и скидках в них, и все это, представлено в соответствующих каталогах магазинов. Во многих
+					категориях присутствуют не только сведения об акциях, но и непосредственно сниженные цены на товары, что
+					очень удобно, ведь так можно сразу сравнить и сделать выбор.</p>
+			</div>
+		</div>
+		<section class="feedback">
+			<div class="container">
+				<div class="feedback__wrap">
+					<div class="search">
+						<p class="search__headline">Не нашли ничего интересного?</p>
+						<p class="search__info">Возможно вы найдете что-то среди акций других магазинов!</p>
+						<a href="#" class="search__link">Все акции</a>
+	
+					</div>
+					<form class="newsletter" name="newsletter" action="#">
+						<p class="newsletter__headline">Получайте самые интересные предложения первыми!</p>
+						<div class="newsletter__input-wrap">
+							<input class="newsletter__input" type="email" name="email" placeholder="Введите вашу почту">
+							<button class="newsletter__submit"></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<footer class="footer">
+		<div class="container">
+			<a href="" class="footer__logo">
+				<img src="./images/footer-logo.svg" alt="">
+			</a>
+			<div class="footer__info">
+				<p class="footer__info-text">
+					© 2022 bycas.ru
+				</p>
+				<a href="" class="footer__info-link">
+					Политика конфиденциальности
+				</a>
+			</div>
+			<p class="footer__copyright">
+				Данный не является официальным сайтом представленных организаций. Информация получена из открытых источников для ознакомительного использования и не является публичной офертой, рекламой или призывом к действию.. Отзывы являются оценочными суждениями их авторов и не имеют отношения к редакции сайта. Ответственность за достоверность отзыва несёт его автор. Выписать лекарство может только врач.
+			</p>
+		</div>
+	</footer>
+
+	<div class="social">
+		<p class="social__description">
+			Подпишитесь на новые акции
+		</p>
+		<ul class="social__list">
+			<li class="social__item mail grey-hover">
+				<a href="" class="social__link">
+					<svg class="icon social__icon">
+						<use xlink:href="./images/sprites.svg#mail"></use>
+					</svg>
+					<p class="social__text">
+						Почта
+					</p>
+				</a>
+			</li>
+			<li class="social__item viber">
+				<a href="" class="social__link">
+					<svg class="icon social__icon">
+						<use xlink:href="./images/sprites.svg#viber"></use>
+					</svg>
+					<p class="social__text">
+						Viber
+					</p>
+				</a>
+			</li>
+			<li class="social__item telegram">
+				<a href="" class="social__link">
+					<svg class="icon social__icon">
+						<use xlink:href="./images/sprites.svg#telegram"></use>
+					</svg>
+					<p class="social__text">
+						Telegram
+					</p>
+				</a>
+			</li>
+			<li class="social__item whats-up">
+				<a href="" class="social__link">
+					<svg class="icon social__icon">
+						<use xlink:href="./images/sprites.svg#whats-up"></use>
+					</svg>
+					<p class="social__text">
+						WhatsApp
+					</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="modal">
+		<button type="button" class="modal__close close">
+			<svg class="icon modal__close-icon">
+				<use xlink:href="./images/sprites.svg#close"></use>
+			</svg>
+		</button>
+		<p class="modal__title h3-title">
+			Оставить отзыв
+		</p>
+		<form class="modal__form">
+			<fieldset class="modal__fieldset">
+				<label for="" class="modal__field">
+					<p class="modal__subtitle">
+						Ваше имя
+					</p>
+					<input type="text" class="modal__input" placeholder="Введите ваше имя">
+				</label>
+				<label for="" class="modal__field">
+					<p class="modal__subtitle">
+						Поставьте оценку
+					</p>
+					<div class="modal__rating">
+						<input type="radio" id="modal-rating-5" class="modal__radio visually-hidden" name="rating" data-value="5">
+						<label for="modal-rating-5" class="modal__star">
+							<svg class="icon modal__star-icon">
+								<use xlink:href="./images/sprites.svg#rating-star"></use>
+							</svg>
+						</label>
+						<input type="radio" id="modal-rating-4" class="modal__radio visually-hidden" name="rating" data-value="4">
+						<label for="modal-rating-4" class="modal__star">
+							<svg class="icon modal__star-icon">
+								<use xlink:href="./images/sprites.svg#rating-star"></use>
+							</svg>
+						</label>
+						<input type="radio" id="modal-rating-3" class="modal__radio visually-hidden" name="rating" data-value="3">
+						<label for="modal-rating-3" class="modal__star">
+							<svg class="icon modal__star-icon">
+								<use xlink:href="./images/sprites.svg#rating-star"></use>
+							</svg>
+						</label>
+						<input type="radio" id="modal-rating-2" class="modal__radio visually-hidden" name="rating" data-value="2">
+						<label for="modal-rating-2" class="modal__star">
+							<svg class="icon modal__star-icon">
+								<use xlink:href="./images/sprites.svg#rating-star"></use>
+							</svg>
+						</label>
+						<input type="radio" id="modal-rating-1" class="modal__radio visually-hidden" name="rating" data-value="1">
+						<label for="modal-rating-1" class="modal__star">
+							<svg class="icon modal__star-icon">
+								<use xlink:href="./images/sprites.svg#rating-star"></use>
+							</svg>
+						</label>
+						<p class="modal__rating-message">
+							Нет оценки
+						</p>
+					</div>
+				</label>
+			</fieldset>
+			<label for="" class="modal__textarea">
+				<p class="modal__subtitle">
+					Напишите о ваших впечатлениях
+				</p>
+				<textarea id="" class="modal__textarea-field"></textarea>
+			</label>
+			<button class="modal__btn grey-hover" type="submit">
+				Оставить отзыв
+			</button>
+		</form>
+	</div>
+
+	<div class="modal modal_success">
+		<div class="modal__img">
+			<svg class="modal__img-icon">
+				<use xlink:href="./images/sprites.svg#thumb-up"></use>
+			</svg>
+		</div>
+		<p class="modal__title h3-title">
+			Спасибо, что поделились своим мнением!
+		</p>
+		<p class="modal__text">
+			Отзыв отправлен на модерацию, скоро вы увидите его на странице :)
+		</p>
+		<div class="modal__btn grey-hover close">
+			Закрыть
+		</div>
+	</div>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" defer></script>
+	<script src="./js/libs/swiper-bundle.min.js" defer></script>
+	<script src="./js/libs/fancybox.umd.js" defer></script>
+	<script src="./js/app.js" defer></script>
+</body>
+
+</html>

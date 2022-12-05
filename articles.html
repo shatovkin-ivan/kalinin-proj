@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/libs/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/libs/fancybox.css">
+	<link rel="preload" href="./fonts/nunitosans-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/jost-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/jost-medium-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrap">
+				<div class="header__left-block">
+					<a href="" class="header__logo">
+						<img src="./images/logo-header.svg" alt="logo" class="header__logo-img">
+					</a>
+					<div class="header__location">
+						<svg class="icon header__map-icon">
+							<use xlink:href="./images/sprites.svg#location"></use>
+						</svg>
+						<div class="header__search-place">
+							<p class="header__place">Тамбов</p>
+							<a href="#" class="header__search-link">Это не ваш город?</a>
+						</div>
+					</div>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="" class="header__nav-link text-hover">Аптеки</a>
+						</li>
+						<li class="header__item">
+							<a href="" class="header__nav-link text-hover">Города</a>
+						</li>
+						<li class="header__item">
+							<a href="" class="header__nav-link text-hover">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__right-block">
+					<label class="header__search" for="header-search">
+						<input type="search" class="header__search-content" id="header-search" placeholder="Поиск">
+						<svg class="icon header__search-svg">
+							<use xlink:href="./images/sprites.svg#search"></use>
+						</svg>
+					</label>
+					<button class="header__signin-button blue-hover">Войти</button>
+				</div>
+				<button type="button" class="burger">
+					<span class="burger__line"></span>
+				</button>
+				<div class="menu-mobile">
+					<div class="header__location menu-mobile__location">
+						<svg class="icon header__map-icon">
+							<use xlink:href="./images/sprites.svg#location"></use>
+						</svg>
+						<div class="header__search-place">
+							<p class="header__place">Тамбов</p>
+							<a href="#" class="header__search-link">Это не ваш город?</a>
+						</div>
+					</div>
+					<nav class="header__nav menu-mobile__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="" class="header__nav-link">Аптеки</a>
+							</li>
+							<li class="header__item">
+								<a href="" class="header__nav-link">Города</a>
+							</li>
+							<li class="header__item">
+								<a href="" class="header__nav-link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__right-block menu-mobile__block">
+						<label class="header__search" for="header-search-mobile">
+							<input type="search" class="header__search-content" id="header-search-mobile" placeholder="Поиск">
+							<svg class="icon header__search-svg">
+								<use xlink:href="./images/sprites.svg#search"></use>
+							</svg>
+						</label>
+						<button class="header__signin-button">Войти</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main id="main">
+		<div class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="" class="breadcrumbs__link">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="" class="breadcrumbs__link">
+							Компании
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="" class="breadcrumbs__link">
+							Магнит
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<section class="intro-add">
+			<div class="container">
+				<div class="intro-add__wrap">
+                    <div class="intro-add__head">
+                        <h1 class="intro-add__title h1-title">Все статьи</h1>
+                    </div>
+					<label class="intro-add__search" for="search-company">
+						<svg class="intro-add__search-icon icon">
+							<use xlink:href="./images/sprites.svg#search"></use>
+						</svg>
+						<input class="intro-add__search-input" type="search" name="search-company" id="search-company" placeholder="Поиск по статьям">
+					</label>
+				</div>
+			</div>
+		</section>
+
+		<section class="articles-promo">
+            <div class="container">
+                <div class="articles-promo__wrap">
+                    <div class="articles-promo__content">
+                        <ul class="articles-promo__list articles__content">
+                            <li class="articles__item articles-card shadow-hover">
+								<a href="" class="articles-card__link">
+									<div class="articles-card__img">
+										<img src="./images/action-4.png" alt="">
+									</div>
+									<div class="articles-card__content">
+										<div class="articles-card__head">
+											<p class="articles-card__description">
+												Статья
+											</p>
+											<time class="articles-card__date">
+												14.08.2022
+											</time>
+										</div>
+										<p class="articles-card__text">
+											Как получить скидочную карту и карту скидок?
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li class="articles__item articles-card shadow-hover">
+								<a href="" class="articles-card__link">
+									<div class="articles-card__img">
+										<img src="./images/action-4.png" alt="">
+									</div>
+									<div class="articles-card__content">
+										<div class="articles-card__head">
+											<p class="articles-card__description">
+												Статья
+											</p>
+											<time class="articles-card__date">
+												14.08.2022
+											</time>
+										</div>
+										<p class="articles-card__text">
+											Как получить скидочную карту и карту скидок?
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li class="articles__item articles-card shadow-hover">
+								<a href="" class="articles-card__link">
+									<div class="articles-card__img">
+										<img src="./images/action-4.png" alt="">
+									</div>
+									<div class="articles-card__content">
+										<div class="articles-card__head">
+											<p class="articles-card__description">
+												Статья
+											</p>
+											<time class="articles-card__date">
+												14.08.2022
+											</time>
+										</div>
+										<p class="articles-card__text">
+											Как получить скидочную карту и карту скидок?
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li class="articles__item articles-card shadow-hover">
+								<a href="" class="articles-card__link">
+									<div class="articles-card__img">
+										<img src="./images/action-4.png" alt="">
+									</div>
+									<div class="articles-card__content">
+										<div class="articles-card__head">
+											<p class="articles-card__description">
+												Статья
+											</p>
+											<time class="articles-card__date">
+												14.08.2022
+											</time>
+										</div>
+										<p class="articles-card__text">
+											Как получить скидочную карту и карту скидок?
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li class="articles__item articles-card shadow-hover">
+								<a href="" class="articles-card__link">
+									<div class="articles-card__img">
+										<img src="./images/action-4.png" alt="">
+									</div>
+									<div class="articles-card__content">
+										<div class="articles-card__head">
+											<p class="articles-card__description">
+												Статья
+											</p>
+											<time class="articles-card__date">
+												14.08.2022
+											</time>
+										</div>
+										<p class="articles-card__text">
+											Как получить скидочную карту и карту скидок?
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li class="articles__item articles-card shadow-hover">
+								<a href="" class="articles-card__link">
+									<div class="articles-card__img">
+										<img src="./images/action-4.png" alt="">
+									</div>
+									<div class="articles-card__content">
+										<div class="articles-card__head">
+											<p class="articles-card__description">
+												Статья
+											</p>
+											<time class="articles-card__date">
+												14.08.2022
+											</time>
+										</div>
+										<p class="articles-card__text">
+											Как получить скидочную карту и карту скидок?
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li class="articles__item articles-card shadow-hover">
+								<a href="" class="articles-card__link">
+									<div class="articles-card__img">
+										<img src="./images/action-4.png" alt="">
+									</div>
+									<div class="articles-card__content">
+										<div class="articles-card__head">
+											<p class="articles-card__description">
+												Статья
+											</p>
+											<time class="articles-card__date">
+												14.08.2022
+											</time>
+										</div>
+										<p class="articles-card__text">
+											Как получить скидочную карту и карту скидок?
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li class="articles__item articles-card shadow-hover">
+								<a href="" class="articles-card__link">
+									<div class="articles-card__img">
+										<img src="./images/action-4.png" alt="">
+									</div>
+									<div class="articles-card__content">
+										<div class="articles-card__head">
+											<p class="articles-card__description">
+												Статья
+											</p>
+											<time class="articles-card__date">
+												14.08.2022
+											</time>
+										</div>
+										<p class="articles-card__text">
+											Как получить скидочную карту и карту скидок?
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li class="articles__item articles-card shadow-hover">
+								<a href="" class="articles-card__link">
+									<div class="articles-card__img">
+										<img src="./images/action-4.png" alt="">
+									</div>
+									<div class="articles-card__content">
+										<div class="articles-card__head">
+											<p class="articles-card__description">
+												Статья
+											</p>
+											<time class="articles-card__date">
+												14.08.2022
+											</time>
+										</div>
+										<p class="articles-card__text">
+											Как получить скидочную карту и карту скидок?
+										</p>
+									</div>
+								</a>
+							</li>
+                        </ul>
+                        <div class="articles-promo__pagination pagination">
+                            <button type="button" class="pagination__btn pagination__btn-prev disabled">
+                                Назад
+                            </button>
+                            <button type="button" class="pagination__btn pagination__btn-page grey-hover current">
+                                1
+                            </button>
+                            <button type="button" class="pagination__btn pagination__btn-page grey-hover">
+                                2
+                            </button>
+                            <button type="button" class="pagination__btn pagination__btn-page grey-hover">
+                                3
+                            </button>
+                            <button type="button" class="pagination__btn pagination__btn-page grey-hover">
+                                ...
+                            </button>
+                            <button type="button" class="pagination__btn pagination__btn-page grey-hover">
+                                12
+                            </button>
+                            <button type="button" class="pagination__btn pagination__btn-next">
+                                Вперед
+                            </button>
+                        </div>
+                    </div>
+                    <aside class="aside">
+						<ul class="aside__categories">
+							<li class="aside__categories-item shadow-hover">
+								<a href="">
+									Адреса магазинов
+								</a>
+							</li>
+							<li class="aside__categories-item shadow-hover">
+								<a href="">
+									Каталог товаров
+								</a>
+							</li>
+							<li class="aside__categories-item shadow-hover">
+								<a href="">
+									Акции магазина
+								</a>
+							</li>
+						</ul>
+						<ul class="aside__events">
+							<li class="aside__events-item orange-gradient">
+								<a class="aside__events-link" href="">
+									<svg>
+										<use xlink:href="./images/sprites.svg#actions"></use>
+									</svg>
+									<p class="aside__events-title">
+										Скидки и акции
+									</p>
+								</a>
+							</li>
+							<li class="aside__events-item green-gradient">
+								<a class="aside__events-link" href="">
+									<svg>
+										<use xlink:href="./images/sprites.svg#coupons"></use>
+									</svg>
+									<p class="aside__events-title">
+										Купоны и промокоды
+									</p>
+								</a>
+							</li>
+						</ul>
+						<ul class="aside__articles">
+							<li class="aside__articles-item shadow-hover">
+								<div class="aside__articles-head">
+									<p class="aside__articles-type">
+										Статья
+									</p>
+									<time class="aside__articles-date">
+										14.08.2022
+									</time>
+								</div>
+								<a href="" class="aside__articles-link">
+									Как получить скидочную карту и карту скидок?
+								</a>
+							</li>
+							<li class="aside__articles-item shadow-hover">
+								<div class="aside__articles-head">
+									<p class="aside__articles-type">
+										Статья
+									</p>
+									<time class="aside__articles-date">
+										01.06.2021
+									</time>
+								</div>
+								<a href="" class="aside__articles-link">
+									Для чего нужно делать что-то?
+								</a>
+							</li>
+						</ul>
+						<a href="" class="aside__link show-more grey-hover">
+							Все статьи
+							<svg class="icon">
+								<use xlink:href="./images/sprites.svg#arrow"></use>
+							</svg>
+						</a>
+					</aside>
+                </div>
+            </div>
+        </section>
+		<section class="feedback">
+			<div class="container">
+				<div class="feedback__wrap">
+					<div class="search">
+						<p class="search__headline">Не нашли ничего интересного?</p>
+						<p class="search__info">Возможно вы найдете что-то среди акций других магазинов!</p>
+						<a href="#" class="search__link">Все акции</a>
+	
+					</div>
+					<form class="newsletter" name="newsletter" action="#">
+						<p class="newsletter__headline">Получайте самые интересные предложения первыми!</p>
+						<div class="newsletter__input-wrap">
+							<input class="newsletter__input" type="email" name="email" placeholder="Введите вашу почту">
+							<button class="newsletter__submit"></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<footer class="footer">
+		<div class="container">
+			<a href="" class="footer__logo">
+				<img src="./images/footer-logo.svg" alt="">
+			</a>
+			<div class="footer__info">
+				<p class="footer__info-text">
+					© 2022 bycas.ru
+				</p>
+				<a href="" class="footer__info-link">
+					Политика конфиденциальности
+				</a>
+			</div>
+			<p class="footer__copyright">
+				Данный не является официальным сайтом представленных организаций. Информация получена из открытых источников для ознакомительного использования и не является публичной офертой, рекламой или призывом к действию.. Отзывы являются оценочными суждениями их авторов и не имеют отношения к редакции сайта. Ответственность за достоверность отзыва несёт его автор. Выписать лекарство может только врач.
+			</p>
+		</div>
+	</footer>
+
+	<div class="social">
+		<p class="social__description">
+			Подпишитесь на новые акции
+		</p>
+		<ul class="social__list">
+			<li class="social__item mail grey-hover">
+				<a href="" class="social__link">
+					<svg class="icon social__icon">
+						<use xlink:href="./images/sprites.svg#mail"></use>
+					</svg>
+					<p class="social__text">
+						Почта
+					</p>
+				</a>
+			</li>
+			<li class="social__item viber">
+				<a href="" class="social__link">
+					<svg class="icon social__icon">
+						<use xlink:href="./images/sprites.svg#viber"></use>
+					</svg>
+					<p class="social__text">
+						Viber
+					</p>
+				</a>
+			</li>
+			<li class="social__item telegram">
+				<a href="" class="social__link">
+					<svg class="icon social__icon">
+						<use xlink:href="./images/sprites.svg#telegram"></use>
+					</svg>
+					<p class="social__text">
+						Telegram
+					</p>
+				</a>
+			</li>
+			<li class="social__item whats-up">
+				<a href="" class="social__link">
+					<svg class="icon social__icon">
+						<use xlink:href="./images/sprites.svg#whats-up"></use>
+					</svg>
+					<p class="social__text">
+						WhatsApp
+					</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="modal">
+		<button type="button" class="modal__close close">
+			<svg class="icon modal__close-icon">
+				<use xlink:href="./images/sprites.svg#close"></use>
+			</svg>
+		</button>
+		<p class="modal__title h3-title">
+			Оставить отзыв
+		</p>
+		<form class="modal__form">
+			<fieldset class="modal__fieldset">
+				<label for="" class="modal__field">
+					<p class="modal__subtitle">
+						Ваше имя
+					</p>
+					<input type="text" class="modal__input" placeholder="Введите ваше имя">
+				</label>
+				<label for="" class="modal__field">
+					<p class="modal__subtitle">
+						Поставьте оценку
+					</p>
+					<div class="modal__rating">
+						<input type="radio" id="modal-rating-5" class="modal__radio visually-hidden" name="rating" data-value="5">
+						<label for="modal-rating-5" class="modal__star">
+							<svg class="icon modal__star-icon">
+								<use xlink:href="./images/sprites.svg#rating-star"></use>
+							</svg>
+						</label>
+						<input type="radio" id="modal-rating-4" class="modal__radio visually-hidden" name="rating" data-value="4">
+						<label for="modal-rating-4" class="modal__star">
+							<svg class="icon modal__star-icon">
+								<use xlink:href="./images/sprites.svg#rating-star"></use>
+							</svg>
+						</label>
+						<input type="radio" id="modal-rating-3" class="modal__radio visually-hidden" name="rating" data-value="3">
+						<label for="modal-rating-3" class="modal__star">
+							<svg class="icon modal__star-icon">
+								<use xlink:href="./images/sprites.svg#rating-star"></use>
+							</svg>
+						</label>
+						<input type="radio" id="modal-rating-2" class="modal__radio visually-hidden" name="rating" data-value="2">
+						<label for="modal-rating-2" class="modal__star">
+							<svg class="icon modal__star-icon">
+								<use xlink:href="./images/sprites.svg#rating-star"></use>
+							</svg>
+						</label>
+						<input type="radio" id="modal-rating-1" class="modal__radio visually-hidden" name="rating" data-value="1">
+						<label for="modal-rating-1" class="modal__star">
+							<svg class="icon modal__star-icon">
+								<use xlink:href="./images/sprites.svg#rating-star"></use>
+							</svg>
+						</label>
+						<p class="modal__rating-message">
+							Нет оценки
+						</p>
+					</div>
+				</label>
+			</fieldset>
+			<label for="" class="modal__textarea">
+				<p class="modal__subtitle">
+					Напишите о ваших впечатлениях
+				</p>
+				<textarea id="" class="modal__textarea-field"></textarea>
+			</label>
+			<button class="modal__btn grey-hover" type="submit">
+				Оставить отзыв
+			</button>
+		</form>
+	</div>
+
+	<div class="modal modal_success">
+		<div class="modal__img">
+			<svg class="modal__img-icon">
+				<use xlink:href="./images/sprites.svg#thumb-up"></use>
+			</svg>
+		</div>
+		<p class="modal__title h3-title">
+			Спасибо, что поделились своим мнением!
+		</p>
+		<p class="modal__text">
+			Отзыв отправлен на модерацию, скоро вы увидите его на странице :)
+		</p>
+		<div class="modal__btn grey-hover close">
+			Закрыть
+		</div>
+	</div>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" defer></script>
+	<script src="./js/libs/swiper-bundle.min.js" defer></script>
+	<script src="./js/libs/fancybox.umd.js" defer></script>
+	<script src="./js/app.js" defer></script>
+</body>
+
+
+</html>
